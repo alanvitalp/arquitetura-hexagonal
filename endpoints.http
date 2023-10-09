@@ -1,0 +1,21 @@
+### create product
+POST http://localhost:9000/product
+Content-Type: application/json
+
+{
+  "name": "Testando HTTP",
+  "price": 20.0
+}
+
+### get product
+
+GET http://localhost:9000/product/0dbb21d7-e2e4-4642-8511-e59d54a607ae
+Content-Type: application/json
+
+### enable product
+GET http://localhost:9000/product/0dbb21d7-e2e4-4642-8511-e59d54a607ae/enable
+Content-Type: application/json
+
+### disable product (price must be 0)
+GET http://localhost:9000/product/0dbb21d7-e2e4-4642-8511-e59d54a607ae/disabled
+Content-Type: application/json
